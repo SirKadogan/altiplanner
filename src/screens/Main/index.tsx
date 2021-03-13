@@ -1,11 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Main.css";
-
-// Libraries
 
 // Components
 import Header from "../../components/Header";
-import Padding from "../../components/Padding";
 import Activity from "../../components/Activity";
 
 const Main = () => {
