@@ -12,14 +12,12 @@ const Main = () => {
   return (
     <div className="App p-grid p-dir-col">
       <Header />
-      <div className="p-grid">
-        <Padding />
+      <div className="p-grid  p-justify-center">
         <div className="p-col-12 p-md-8 p-grid">
           <Activity />
           <Activity />
           <Activity />
         </div>
-        <Padding />
       </div>
     </div>
   );
