@@ -5,8 +5,13 @@ import "./Main.css";
 import Header from "../../components/Header";
 import Activity from "../../components/Activity";
 
+// Styles
+import GlobalStyles from '../../styles/global';
+
 const Main = () => {
   return (
+    <>
+    <GlobalStyles/>
     <div className="App p-grid p-dir-col">
       <Header />
       <div className="p-grid  p-justify-center">
@@ -17,6 +22,7 @@ const Main = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

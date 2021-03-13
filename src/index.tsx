@@ -4,12 +4,10 @@ import Main from "./screens/Main";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 
-import "primeflex/primeflex.css";
-
-import "./index.css";
 import "primereact/resources/themes/saga-blue/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
 
 ReactDOM.render(
   <React.StrictMode>

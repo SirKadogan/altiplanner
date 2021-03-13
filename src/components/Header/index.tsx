@@ -1,12 +1,16 @@
 import React from "react";
-import "./Header.css";
 
-const Header = () => {
+import { Header } from './styles';
+
+//Assets
+import logo_plane from '../../assets/logo_plane.png'
+
+const CustomHeader = () => {
   return (
-    <div className="header p-d-flex p-jc-start p-ai-center p-col-12">
-      <div className="p-ml-2">altiplanner</div>
-    </div>
+    <Header>
+      <img src={logo_plane} alt="logo" height="50px"/>
+    </Header>
   );
 };
 
-export default Header;
+export default CustomHeader;
