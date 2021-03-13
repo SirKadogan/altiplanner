@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import COLORS from '../constants/colors';
 
 export default createGlobalStyle`
   * {
@@ -19,6 +20,10 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+  }
+
+  h1,h2,h3,span,p {
+    color: ${COLORS.DARK}
   }
 
   .p-grid{
