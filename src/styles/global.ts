@@ -23,7 +23,7 @@ export default createGlobalStyle`
   }
 
   h1,h2,h3,span,p {
-    color: ${COLORS.DARK}
+    color: ${COLORS.SUPPORT}
   }
 
   .p-grid{
