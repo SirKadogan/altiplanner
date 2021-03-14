@@ -4,16 +4,29 @@ import {FiPlus, FiMinus} from 'react-icons/fi';
 import {Container} from './styles';
 
 interface CounterProps {
-  value?: Number;
-  setValue?: () => void;
+  counter: number;
+  setCounter: React.Dispatch<number>;
 }
 
-const Counter = ({value = 0, setValue}: CounterProps) => {
+const Counter = ({counter, setCounter}: CounterProps) => {
+
+  const decrement = () => {
+    if (counter <= 0){
+      setCounter(0);
+      return;
+    }
+    setCounter(counter - 1);
+  }
+
+  const increment = () => {
+    setCounter(counter + 1);
+  }
+
   return (
     <Container>
-      <FiMinus />
-      <span>{value}</span>
-      <FiPlus />
+      <FiMinus onClick = {decrement}/>
+      <span>{counter}</span>
+      <FiPlus onClick= {increment}/>
     </Container>
   )
 }
