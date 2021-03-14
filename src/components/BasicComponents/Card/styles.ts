@@ -13,4 +13,5 @@ export const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 5px;
 `;

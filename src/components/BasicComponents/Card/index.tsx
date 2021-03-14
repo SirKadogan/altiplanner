@@ -16,7 +16,7 @@ const CardComponent: CardComponentProps = ({children})=> (
 )
 
 const CardBodyComponent: React.FC = ({children}) => (
- <span>foo</span>
+ <>{children}</>
 )
 
 const CardHeaderComponent: React.FC = ({children}) => (
