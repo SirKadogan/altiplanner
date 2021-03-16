@@ -4,6 +4,7 @@ import "./Main.css";
 // Components
 import Header from "../../components/Header";
 import Activity from "../../components/Activity";
+import WeekPicker from "../../components/WeekPicker";
 
 // Styles
 import GlobalStyles from '../../styles/global';
@@ -14,7 +15,10 @@ const Main = () => {
     <GlobalStyles/>
     <div className="App p-grid p-dir-col">
       <Header />
-      <div className="p-grid  p-justify-center">
+      <div className="p-grid p-justify-center">
+        <div className = "p-col-12 p-md-8 p-grid">
+          <WeekPicker />
+        </div>
         <div className="p-col-12 p-md-8 p-grid">
           <Activity />
           <Activity />
