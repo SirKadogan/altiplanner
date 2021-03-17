@@ -12,7 +12,7 @@ const WeekPicker = () => {
       <FiChevronLeft />
       <WeekContainer>
         <Week />
-        <Week />
+        <Week active />
         <Week />
       </WeekContainer>
       <FiChevronRight />
