@@ -1,17 +1,23 @@
 import React from 'react';
 
+
 // Components
 import Week from './components/Week';
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import { Container, WeekContainer } from "./styles";
 
 const WeekPicker = () => {
   return (
-    <>
-      <Week />
-      <Week />
-      <Week />
-      <Week />
-    </>
-  )
+    <Container>
+      <FiChevronLeft />
+      <WeekContainer>
+        <Week />
+        <Week />
+        <Week />
+      </WeekContainer>
+      <FiChevronRight />
+    </Container>
+  );
 }
 
 export default WeekPicker;

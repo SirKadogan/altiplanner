@@ -4,11 +4,14 @@ import COLORS from '../../../../constants/colors';
 
 export const Container = styled.div`
   width: 100%;
-  padding: 5px; 
+  padding: 5px;
   border: 1px solid ${COLORS.ACCENT};
   border-radius: 4px;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  margin: 3px;
+
   span {
     font-weight: bold;
   }
