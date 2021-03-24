@@ -2,7 +2,6 @@ import React from 'react';
 
 // Components
 import { Span } from '../../../Typography';
-
 import { Container, DateRange } from './styles';
 import { WeekProps } from '../../index';
 
