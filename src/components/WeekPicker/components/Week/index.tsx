@@ -1,19 +1,21 @@
 import React from 'react';
 
 // Components
-import {Span} from '../../../Typography';
+import { Span } from '../../../Typography';
 
 import { Container, DateRange } from './styles';
+import { WeekProps } from '../../index';
 
-interface WeekProps {
+interface WeekCardProps {
   active?: boolean;
+  week: WeekProps;
 }
 
-const Week: React.FC<WeekProps> = ({ active }) => {
+const Week: React.FC<WeekCardProps> = ({ week }) => {
   return (
-    <Container active= {active}>
-      <Span>Semana 1</Span>
-      <DateRange>16/03 - 23/03</DateRange>
+    <Container active={true}>
+      <Span>Semana {week.weekNumber}</Span>
+      <DateRange>{`${week.startOfWeek} - ${week.endOfWeek}`}</DateRange>
     </Container>
   );
 };
