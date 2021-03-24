@@ -8,13 +8,6 @@ export const Container = styled.div`
   align-items: center;
   font-size: 20px;
 
-  -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
   svg {
     color: ${COLORS.SUPPORT};
     cursor: pointer;
